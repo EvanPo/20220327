@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+
+<body style="background-color: antiquewhite;">
+
+</body>
+</head>
+
+<body>
+    <h1>System login</h1>
+
+    <form method="get" action="">
+        <div>
+            <input type="account" name="acc">
+        </div>
+        <div>
+            <input type="password" name="pwd">
+        </div>
+        <div>
+            <input type="number" name="valid">
+        </div>
+        <button>Login</button>
+        <div>
+            <input type="TEL" name="phone">
+        </div>
+        <div>
+            <input type="color" name="bg_color">
+        </div>
+        <div>
+            <input type="Date" name="schedule_date">
+        </div>
+        <div>
+            <input type="Time" name="schedule_Time">
+        </div>
+        <div>
+            <input type="Submit">
+        </div>
+        <div>
+            <input type="file" name="my_pic">
+        </div>
+
+    </form>
+    <form method="post" enctype="multipart/form-data"
+        action="https://book.niceinfos.com/frontend/assets/html_file_upload/response.php">
+        <input type="file" name="my_pic'">
+        <button>Upload</button>
+    </form>
+
+    <form action="">
+        <h2>Choose One</h2>
+        <input type="radio" name="gender" value="Male">Boy
+        <input type="radio" name="gender" value="Female">Girl
+
+        <h2>Multiple choices</h2>
+        <input type="checkbox" name="agree"> I agree with the <a href="＃">Policy</a>
+
+        <h2>Favorite Sport</h2>
+        <input type="checkbox" name="ins[]" value="Baseball" id="c_1">Baseball
+        <input type="checkbox" name="ins[]" value="Basketball" id="c_2">Basketball
+        <input type="checkbox" name="ins[]" value="Golf" id="c_3">Golf
+        <label for="c_1">Basetball</label>
+        <label for="c_2">Basketball</label>
+        <label for="c_3">Golf</label>
+
+        <h1>City</h1>
+        <div>
+
+            <h1>Multiple</h1>
+            <select name="city[]" multiple>
+                <option value="">choose city</option>
+                <option value="TC">Taichung</option>
+                <option value="TPE">Taipei</option>
+                <option value="TAN">Tainan</option>
+            </select>
+
+            <h1>Only one choices</h1>
+            <select name="city" id="">
+                <option value="">choose city</option>
+                <option value="TC">Taichung</option>
+                <option value="TPE">Taipei</option>
+                <option value="TAN">Tainan</option>
+            </select>
+        </div>
+        <div>
+            <input type="text">
+            <textarea name="remark" id="" cols="50" rows="20" style="resize: none;"></textarea>
+        </div>
+        <button>Confirm</button>
+
+    </form>
+</body>
+
+</html>
