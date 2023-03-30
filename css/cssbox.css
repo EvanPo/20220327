@@ -1,0 +1,18 @@
+.cube{
+    width: 800px;
+    height: 600px;
+    background: blanchedalmond;
+    color: black;
+    text-align: center;
+    line-height: 100px;
+    background-image: url(../image/Loft.jpeg);
+    /*backgound-repeat: no-repeat;*/
+    /*backgound-size:cover;*/
+   padding: 20px;
+   padding: 20px 40px 50;
+   borderr: 3px solid red
+   border-width: 30px;
+   border-style: dashed;
+   border-style:dotted;
+   border-color:blue;
+}

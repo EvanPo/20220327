@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>選擇器特性</title>
+</head>
+
+<body>
+    <style>
+        div {
+            color: cornflowerblue;
+        }
+
+        span {
+            color: chocolate !important;
+        }
+
+        span {
+            color: blue;
+        }
+    </style>
+    <div>Number one</div>
+    <span>Number two</span>
+    <span>
+        <div style="color: darkseagreen;">Number three</div>
+    </span>
+    <div>Number four</div>
+    <span>Number five </span>
+    <span>
+        <div style="color: darkseagreen;">Number six</div>
+    </span>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+*,
+*::after,
+**::before{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+button {
+    background-color: antiquewhite;
+    border: 0;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+label{
+    font-size: 700;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: bisque;
+}
+#contact-form{
+    text-align:center;
+    border: 1px; 
+    display: inline-block;
+margin-bottom: 15px;
+width: 100%;
+}
+.input-text{
+    width: 80%;
+    height: 40px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+}
+select{
+    width: 50%;
+    height: 40px;
+    resize: none;
+    margin-bottom: 15px;
+}
+textarea{
+    width: 80px;
+    height: 80px;
+    resize: none;
+    margin: bottom 20px; ;
+}
+button{
+    background-color: antiquewhite;
+    color: black;
+    border: 0;
+}
