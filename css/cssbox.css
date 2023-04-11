@@ -10,9 +10,9 @@
     /*backgound-size:cover;*/
    padding: 20px;
    padding: 20px 40px 50;
-   borderr: 3px solid red
+   border: 3px solid red;
    border-width: 30px;
    border-style: dashed;
-   border-style:dotted;
-   border-color:blue;
+   border-style: dotted;
+   border-color: blue;
 }
