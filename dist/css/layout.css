@@ -140,3 +140,65 @@ a {
 .slider-dots li:nth-child(2) .slider-dot{
     background: red;
 }
+.table{
+    width: 90%;
+    margin: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.table td,
+.table th{
+border:1px solid white;
+padding:10px;
+}
+.table tbody tr{
+    background: whitesmoke;
+}
+.table tbody tr :nth-child(odd){
+    background: ghostwhite;
+}
+.table tbody tr:nth-child(even){
+    background: wheat;
+}
+
+.menu-item li{
+    margin-right: 20px;
+    background: blanchedalmond;
+}
+
+.menu-item li :last-child{
+    msrgin-right:0
+}
+.menu-item li:nth-child(7){
+    color: blueviolet;
+}
+.block::before{
+    content: 'Evan ';
+}
+.block::after{
+    content: '~~~~';
+}
+.block::after{
+    content: '~~~~';
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background: #555555;
+    position: absolute;
+    right: 0%;
+}
+
+.group1 .switch +.item {
+    color: red;
+}
+.group2 .switch +.item {
+    color: red;
+}
+/*.group1 .switch ~.item {
+    color: red;
+}
+.group2 .switch ~.item {
+    color: red;
+}*/
