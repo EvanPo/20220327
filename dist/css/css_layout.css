@@ -1,0 +1,24 @@
+*,*::after,*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+}
+.container{
+    max-width: 700px;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+.header{
+    background: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 100px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
