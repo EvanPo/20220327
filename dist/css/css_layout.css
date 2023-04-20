@@ -1,60 +1,100 @@
-*,*::after,*::before {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    background: black;
+
+a {
+  color: inherit;
 }
-.container{
-    max-width: 800px;
-    height: 100%;
-    position: relative;
-    margin: auto;
+
+body {
+  background: black;
 }
-.header{
-    background: whitesmoke;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    height: 100px;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
+
+.container {
+  max-width: 700px;
+  height: 100%;
+  position: relative;
+  margin: auto;
 }
-.menu ul{
-    list-style-type: none;
-    display: flex;
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
-.menu ul li{
-    text-align: center;
-    margin-right: 15px;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-size: 18px;   
+.header .header-content {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 100px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
-.menu ul li:last-child{
-margin-right:0;
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
 }
-.menu ul li .en{
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 800;
-    font-family: 'Courier New', Courier, monospace;
-    color: black;
+.menu ul li {
+  text-align: center;
+  margin-right: 15px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 18px;
 }
-.menu ul li .zh{
-    color: black;
+.menu ul li:hover {
+  color: blue;
 }
-.footer{
-    background: white;
-    height: 100px;
+.menu ul li:last-child {
+  margin-right: 0;
 }
-.footer-content{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
+.menu ul li .en {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: "Courier New", Courier, monospace;
 }
-.wrap{
-    height: 100vh;
+
+.footer {
+  background: #fff;
+  height: 100px;
 }
+.footer .footer-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.join-form {
+  height: 100vh;
+  background-color: rgb(255, 238, 205);
+}
+.join-form .join-form-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.join-form .join-form-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.join-form .join-form-content > div {
+  width: 50%;
+  display: flex;
+  background: rgb(237, 190, 190);
+}
+
+.wrap {
+  height: 100vh;
+  background: yellow;
+}/*# sourceMappingURL=css_layout.css.map */

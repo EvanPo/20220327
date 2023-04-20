@@ -169,7 +169,7 @@ padding:10px;
 }
 
 .menu-item li :last-child{
-    msrgin-right:0
+    margin-right:0
 }
 .menu-item li:nth-child(7){
     color: blueviolet;
