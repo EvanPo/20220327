@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 900px;
+  height: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.rotate {
+  transform: rotate(45deg);
+  display: inline-flex;
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  background-color: red;
+  color: yellow;
+}
+
+.sp {
+  display: flex;
+  margin-top: 150px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: #fff;
+  justify-content: center;
+  transform: rotate(45deg);
+  align-items: center;
+}
+.sp > span {
+  transform: rotate(135deg);
+  font-size: 30px;
+  font-weight: 800;
+}/*# sourceMappingURL=transform.css.map */
