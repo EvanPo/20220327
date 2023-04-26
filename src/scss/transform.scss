@@ -1,5 +1,11 @@
 @import 'reset';
 
+body {
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+}
+
 .container {
     max-width: 900px;
     height: 100%;
@@ -58,6 +64,14 @@
     position: relative;
     overflow: hidden;
 
+    &:hover {
+        >div:first-child {
+            transform: scale(2);
+            font-size: 60;
+            transition-duration: 3s;
+        }
+
+    }
 
     .sale {
         position: absolute;
@@ -69,5 +83,29 @@
         text-align: center;
         transform: rotate(45deg);
         font-size: 18px;
+    }
+}
+
+.small-font {
+    margin: 50px;
+    font-size: 5px;
+    transform: scale(0.5);
+}
+
+.bg-change {
+    margin: 50px auto;
+    background: red;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    &:hover {
+        background: yellowgreen;
+        color: bisque(231, 149, 41);
+        transition-property: all;
+        transition-duration: 1s;
     }
 }
