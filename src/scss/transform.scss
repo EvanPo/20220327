@@ -23,14 +23,14 @@
     width: 100px;
     height: 100px;
     background-color: red;
-    color: #fff;
+    color: black;
     justify-content: center;
     transform: rotate(45deg);
     align-items: center;
 
     >span {
         transform: rotate(135deg);
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 800;
     }
 }
