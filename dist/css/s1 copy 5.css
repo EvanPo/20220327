@@ -8,4 +8,9 @@
 
 a {
   color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }/*# sourceMappingURL=s1 copy 5.css.map */
