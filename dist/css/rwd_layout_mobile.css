@@ -1,0 +1,93 @@
+@media screen and (max-width: 900px) {
+  .header .header-content {
+    position: relative;
+  }
+  .header .header-content .menu {
+    display: none;
+    position: absolute;
+    background: white;
+    top: -500px;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: 0.3s;
+  }
+  .header .header-content .menu ul {
+    flex-direction: column;
+  }
+  .header .header-content .menu ul li {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .header .header-content .menu ul li:last-child {
+    margin-bottom: 0%;
+  }
+  .header .header-content .mobile-switch {
+    display: flex;
+  }
+  .header .header-content #mobile-switch-box {
+    width: 100px;
+  }
+  .header .header-content #mobile-switch-box:checked ~ .menu {
+    display: block;
+    top: 90px;
+    opacity: 1;
+  }
+  .header .header-content #mobile-switch-box:checked ~ .mobile-switch > span:first-child {
+    transform: rotate(45deg);
+  }
+  .header .header-content #mobile-switch-box:checked ~ .mobile-switch > span:nth-child(2) {
+    display: none;
+  }
+  .header .header-content #mobile-switch-box:checked ~ .mobile-switch > span:last-child {
+    position: relative;
+    transform: rotate(-45deg);
+    top: -5px;
+  }
+  .join-form {
+    height: unset;
+    min-height: 100vh;
+  }
+  .join-form .join-form-wrap .join-form-content {
+    flex-direction: column;
+    background: transparent;
+    height: unset;
+    padding-bottom: 60px;
+  }
+  .join-form .join-form-wrap .join-form-content > div {
+    width: 100%;
+    height: 300px;
+    background: rgb(167, 192, 246);
+  }
+  .join-form .join-form-wrap .join-form-content .join-form-left-side::before {
+    right: unset;
+    top: unset;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: calc(100% - 60px);
+    margin-left: 30px;
+    border-left-width: 0;
+    border-bottom: 3px dashed #fff;
+  }
+  .flow .item {
+    justify-content: flex-start;
+    padding-left: 5px;
+    margin-bottom: 60px;
+  }
+  .flow .item::before {
+    left: 18px;
+  }
+  .flow .item .text {
+    left: 50px;
+  }
+  .flow .item:nth-child(even) .text {
+    left: 50px;
+    right: unset;
+    text-align: left;
+  }
+}/*# sourceMappingURL=rwd_layout_mobile.css.map */
