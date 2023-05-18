@@ -1,18 +1,41 @@
-let main = document.querySelector('#main');
-console.log(main);
+const gentable = () => {
+    let n1 = document.querySelector('#n1');
+    let n2 = document.querySelector('#n2');
+    if (!n1) {
+        return;
+    }
+    if (n1.value <= 0) {
+        return;
+    }
+    if (!n2) {
+        return;
+    }
+    if (n2.value <= 0) {
+        return;
+    }
 
-main.innerHTML = 'Super man';
-//main.innerHTML = 'Super man';
 
+    let thead = [];
+    thead.push('');
 
-let lis = document.querySelectorAll('#menu li');
-console.log(lis);
+    let result = [];
+    for (let i = 1; i <= n1.value; i++) {
+        thead.push(i);
+        for (let j = 1; j <= n2.value; j++) {
+            result.push(`${i} x ${j} = ${i * j}`);
+        }
+    }
 
-let num1 = document.querySelector('#num-1');
-let showBtn = document.querySelector('#show-btn');
+    let table = document.querySelector('table');
+    let theadTr = table.querySelector('thead tr')
 
-num1.value = '...........'
+    theadTr.innerHTML = '';
+    thead.forEach((n, nindex) => {
+        theadTr.innerHTML = theadTr.innerHTML + `<th>${n}</th>`;
+    });
 
-showBtn.addEventListener('click', () => {
-    num1.value = '1234567'
-});
+    console.log(thead);
+}
+let make = document.querySelector('#make');
+
+make.addEventListener('click', gentable)
