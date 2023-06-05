@@ -1,3 +1,22 @@
+const database = {
+    set(key, value) {
+        value = JSON.stringify(value);
+        localStorage.setItem(key, value);
+    },
+    get(key, def) {
+        let value = localStorage.getItem(key);
+        if (value) {
+            value = JSON.parse(value);
+            return value;
+        }
+        return def;
+    },
+    remove(key) {
+        localStorage.removeItem(key);
+    }
+
+}
+
 let vm = Vue.createApp({
     data() {
         return {
@@ -22,8 +41,35 @@ let vm = Vue.createApp({
                 return;
             }
             this.pending.push(value);
+            this.itemValue = '';
+            this.$refs.itemValue.focus();
+            this.update();
+        },
+        doRemove(index) {
+            console.log(index);
+        },
+        toDone(index) {
+            let value = this.pending[index];
+            this.done.push(value);
+            this.pending.splice(index, 1);
+            database.set('todo-pending', this.pending);
+            this.update();
+        },
+        toPending(index) {
+            let value = this.done[index];
+            this.pending.push(value);
+            this.done.splice(index, 1);
+            this.update();
+        },
+        update() {
+            database.set('todo-pending', this.pending);
+            database.set('todo-done', this.done);
         }
+    },
 
+    mounted() {
+        this.pending = database.get('todo-pending', []);
+        console.log(this.pending);
     }
 
 }).mount('#app');
