@@ -1,5 +1,9 @@
 @import 'reset';
 
+[v-cloak] {
+    display: none;
+}
+
 .container {
     max-width: 800px;
     height: 100%;
@@ -51,6 +55,55 @@
 .pending-item {
     input[type="checkbox"]:checked~label {
         text-decoration: line-through;
+    }
+
+    >ul li {
+        padding: 10px;
+        background: #ff6123;
+        color: #fff;
+        margin-bottom: 10px;
+        cursor: pointer;
+        position: relative;
+        padding-left: 50px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+        &:hover {
+            background: #b13d10;
+        }
+
+        i {
+            position: absolute;
+            display: inline-flex;
+            left: 0;
+            top: 0;
+            width: 30px;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            background: red;
+            font-size: 26px;
+            font-weight: 700;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    }
+}
+
+.done-item {
+    input[type="checkbox"]:checked~label {
+        text-decoration: line-through;
+    }
+
+    >ul li {
+        padding: 10px;
+        background: #08682b;
+        color: #fff;
+        margin-bottom: 10px;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+        &:hover {
+            background: #44e139;
+        }
     }
 }
 
