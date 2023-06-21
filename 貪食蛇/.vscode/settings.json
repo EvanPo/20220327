@@ -1,0 +1,14 @@
+{
+  "editor.formatOnSave": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "~/../css",
+      "savePathReplacementPairs": null
+    }
+  ],
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.port": 5503,
+  "liveSassCompile.settings.generateMap": false
+}

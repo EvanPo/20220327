@@ -65,7 +65,32 @@
                             text: '圖片已上傳',
                             icon: 'success'
                         })
-                    });
+                    }, 2000);
+                Swal.fire({
+                    title: '資料儲存中',
+                    text: '請勿關閉或重新整理視窗',
+                    showConfirmButton: false
+                })
+            },
+
+
+
+
+            async doLoadCloud() {
+                let response = await Swal.fire({
+                    title: '載入雲端資料',
+                    text: '請輸入 UID',
+                    input: 'text'
+                });
+
+                if (response.value) {
+                    let api = 'https://book.niceinfos.com/frontend/api/';
+                    fetch(`${api}?action=todo&uid=${response.uid}`).then(response => {
+                        return response.text();
+                    }).then(text => {
+                        console.log(text);
+                    })
+                }
             },
             doPost() {
                 let api = 'https://book.niceinfos.com/frontend/api/';
